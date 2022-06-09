@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ingreso-egreso-app-431f9": {
+      "hosting": {
+        "ingresoEgresoApp": [
+          "ingreso-egreso-app-431f9"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ingreso-egreso-app-431f9"
+  }
+}
