@@ -24,6 +24,8 @@ import { environment } from 'src/environments/environment';
 import { StoreModule } from '@ngrx/store';
 import { appReducers } from './app.reducer';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { OrdenIngresoPipe } from './pipes/orden-ingreso.pipe';
+import { NgChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -36,12 +38,14 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
     DetalleComponent,
     FooterComponent,
     NavbarComponent,
-    SidebarComponent
+    SidebarComponent,
+    OrdenIngresoPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    NgChartsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireAuthModule,
